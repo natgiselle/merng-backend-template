@@ -22,8 +22,15 @@ const mongoose = require('mongoose');
     put the following line at the end of this file:
         module.exports = connectDB;
 
-    7. check that it works: run npm start.
+    7. check that it works by running the command below in your terminal:
+        npm start
+
     if you see 'MongoDB connected' in the terminal, you're done! 
+    
+    if you see an ERROR instead, check this in order when debugging:
+        1. is MONGO_URI in your .env filled in with proper credientials? (NO QUOTES NO EXTRA SPACES)
+        2. did you replace <password> in the connection string with your real database password?
+        3. is your IP address allowed in the Atlas under Network Access? (can typically be the root of the issue)
     
     8. great job getting started :3
 */
